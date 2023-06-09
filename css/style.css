@@ -5,20 +5,25 @@
 /* Overall */
 
 html {
+    scroll-behavior: smooth;  
   
 }
 
 body {
-  
+    background-image: linear-gradient(rgb(161, 161, 235), rgb(208, 217, 217));
+  color: black;
+
 }
 
 
 /* Typography */ 
 h1 {
+    font-size: 40px;
 
 }
 
 h2 {
+    font-size: 30px;
 
 }
 
@@ -40,4 +45,34 @@ p {
 
 a {
 
+}
+
+
+
+/*Nav*/
+#nav {
+    position: fixed;
+    top:20px;
+    right: 20px;
+
+
+}
+#nav li{
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 40px;
+    
+}
+    
+#nav li:hover {
+   color: blue; 
+   transition-duration: 0.3ms;
+   transform: scale(1.1);
+   border-bottom: 3px solid blue;
+   cursor:pointer;
+
+}
+/*Page Layout*/
+.section {
+    min-height: 100vh
 }
