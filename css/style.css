@@ -1,78 +1,310 @@
 /* Imports */
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Variables */
+<var>(--bg, #FBF7EE);
 
 /* Overall */
 
 html {
-    scroll-behavior: smooth;  
-  
+    scroll-behavior: smooth;
+
+
 }
 
 body {
-    background-image: linear-gradient(rgb(161, 161, 235), rgb(208, 217, 217));
-  color: black;
+    background-color: rgba(251, 247, 238, 1);
+    color: #1B1A19;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+
+
+
 
 }
 
 
-/* Typography */ 
+/* Typography */
 h1 {
-    font-size: 40px;
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: 20px;
+
 
 }
 
 h2 {
-    font-size: 30px;
+    font-family: 'Oswald';
+    font-weight: 300;
+    font-size: 50px;
 
 }
 
 h3 {
+    font-family: 'Oswald';
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
 
 }
 
 h4 {
+    font-size: 24px;
+    font-family: roboto;
+    font-weight: 500px;
+    color: #000719;
+
 
 }
 
 h5 {
+   
+
 
 }
 
-p {
+h6{
+    
+
+
 
 }
 
-a {
+p {}
 
+a {}
+
+/* Logo */
+#logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
 }
 
+#logo:hover {
+    color: #C8D734;
+    transition-duration: 0.3ms;
+    transform: scale(1.1);
+
+
+}
 
 
 /*Nav*/
 #nav {
     position: fixed;
-    top:20px;
+    top: 20px;
     right: 20px;
 
-
 }
-#nav li{
+
+
+#nav li {
     display: inline-block;
     font-size: 20px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 20 px;
     margin-right: 40px;
-    
-}
-    
-#nav li:hover {
-   color: blue; 
-   transition-duration: 0.3ms;
-   transform: scale(1.1);
-   border-bottom: 3px solid blue;
-   cursor:pointer;
+    color: 1B1A19;
 
 }
+
+#nav li:hover {
+    color: #C8D734;
+    transition-duration: 0.3ms;
+    transform: scale(1.1);
+    filter: drop-shadow(30px);
+    border-bottom: 3px solid;
+    border-bottom-color: #C8D734;
+    cursor: pointer;
+
+}
+
+Hero #hero {
+    background-image: url('../images/Group15.png');
+    background-size: cover;
+    padding-top: 200px
+}
+
+h1.bg {
+    font-size: 66px;
+    line-height: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: url('../images/greenlimewash.png') 0 0 / cover no-repeat;
+    color: #C8D734;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+#hero h2 {
+    margin-top: 60vh;
+
+}
+
+.gimmick {
+    background-color: url('../images/hero-bg.svg');
+    background-size: cover;
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    top: calc(50vh - 400px);
+    left: calc(50vw - 400px);
+    animation-name: spin;
+    animation-duration: 100s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* #hero1 img {
+ max-width:300px; 
+ max-height: 300px;
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  padding: 10px;
+}
+
+#hero2 img {
+    max-width:300px; 
+    max-height: 300px;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+   } */
+
+/*Bio*/
+#bio {
+    background-image: url('../images/Vector.png');
+    background-size: contain;
+
+}
+
+#bio img {
+    margin-bottom: 20vh;
+}
+
 /*Page Layout*/
 .section {
-    min-height: 100vh
+
+    min-height: 100vh;
+
+
+
+}
+
+/* Designs Section */
+
+#designs img {
+    width: 100%;
+    border-radius: 30px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+#designs img:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+    transition-duration: 0.3ms;
+    cursor: pointer;
+}
+
+.caseStudy {
+    background-color: #C8D734;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+/* CV */
+#cv img {
+    width: 90%;
+    object-position: center;
+
+}
+
+
+/* Contact */
+
+.contact {
+    height: 100px;
+    width: 90%;
+    position: center;
+    border-radius: 30px;
+    border: 3px solid;
+    background-color: transparent;
+
+}
+
+#contact {
+    width: 100%;
+
+}
+
+.btn {
+    font-family: 'Oswald';
+    font-style: normal;
+    color: black;
+    text-shadow: 4px 6px 6px #C8D734;
+    background-color: transparent;
+    border-width: 10px;
+    margin: 10px;
+
+}
+
+.btn:hover {
+    background-color: #C8D734
+}
+
+
+/* Case Study 1*/
+
+.caseSection {
+    margin-top: 20vh;
+    min-height: 80vh;
+
+}
+
+#section1content {
+    /* position: absolute; */
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 89px;
+    text-shadow: 4px 6px 6px #C2DFE8;
+    width: 100%;
+}
+
+#caseImage {
+    background-color: #C8D734;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+
 }
