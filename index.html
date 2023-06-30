@@ -14,46 +14,57 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+
+
 </head>
 
 <body>
-<!--This is my navigation bar-->
-    <ul id="nav">
-        <a href="#designs">
+
+      <!-- Logo -->
+
+<div id="logo">
+    <a href="#hero"> <h3>AM Design</h3> </a>
+</div>
+
+
+     <!--This is my navigation bar-->
+
+    <div id="navTrigger" onclick="toggleNav()"></div>
+
+    <div id="navWrapper">
+<ul id="nav">
+        <a href="#designs" onclick="toggleNav()">
             <li>Designs</li>
         </a>
-        <a href="#bio">
+        <a href="#bio" onclick="toggleNav()">
             <li>Bio</li>
         </a>
-        <a href="#cv">
+        <a href="#cv" onclick="toggleNav()">
             <li>CV</li>
         </a>
-        <a href="#contact">
+        <a href="#contact" onclick="toggleNav()">
             <li>Contact</li>
         </a>
+
     </ul>
+</div>
 
-    <!-- Logo -->
-    <div id="logo">
-        <a href="#hero"> <h3>AM Design</h3>
-        </a>
-    </div>
-
-
-    
 <!--Hero Section-->
+
 <!-- <video autoplay muted loop id="myVideo">
     <source src="images/Video.mp4.mov">
   </video> -->
+
       <div id= "hero" class="section">
-        <div class="gimmick">
-            <img src="images/gimmick.png">
-        </div>
-        <h1 class= "bg" class="center-align"> Ana Mathew </h1>
-      <div>
-        <h2 class="center-align"> UX/UI Designer</h2>
+        <h1 class= "bg" class="center-align"> Ana Mathew</h1>
+        <h2 class="title"> UX/UI Designer</h2>
         <!-- <h5 class="center-align"> Designing, Building, And Innovating Things That Matter.</h5> -->
-    </div>
+        <div class="gimmick" ></div>
+        <a href="#designs">
+            <div class="arrow"></div>
+        </a>
     </div>
    
 
@@ -75,23 +86,65 @@
 </div> -->
     
 <!--Designs-->
-<div id= "designs" class="section">
-    <h2 class="center-align">Designs</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m6 l6">
-                   <a href="Case1.html"> <img src="images/project-preview.jpg"  /> 
-                   </a>
-                   <img src="images/project-preview.jpg"  /> 
-                </div>
-                <div class="col s12 m6 l6">
-                        <img src="images/project-preview.jpg"  />
-                        <img src="images/project-preview.jpg"  /> 
+<div id="designs" class="section">
+    <h2 class="center-align">Selected Work</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <!-- Card 1  -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/project-preview.jpg">
                     </div>
+                    <div class="card-content">
+                        <span class="card-title">Card Title</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/project-preview.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Card Title</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
+               
+            </div>    
+
+            <div class="col s12 m6 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/project-preview.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Card Title</span>
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                </div>
             </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/project-preview.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Card Title</span>
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                </div>
+            </div>
+        </div> 
+
         </div>
     </div>
+</div>
+
+
+        
 
 <!--Bio-->
 <div id= "bio" class="section">
@@ -102,13 +155,13 @@
                 </div>
                 <div class="col s12 m6 l6">  
                     <p><h3>Hello, I'm Ana! A UX/UI designer with a passion for innovation and making sure people are at the forefront of everything I create.</h3></p> 
-                    <p><h4>With my past experiences in the health industry, I saw the value of combining my empathy for people with a passion for technology.</h4> </p>
+                    <p><h4>With my past experiences in the health industry, I saw the value of combining my empathy for people with my passion for technology.</h4> </p>
                     <p><h4>I bring a unique perspective to design, focusing on creating intuitive and user-friendly experiences that positively impact people's lives.
                         I believe that design is not just about aesthetics; it's a powerful tool for communication, problem-solving, and connection. 
                         By fusing form and function, I create seamless interfaces, intuitive user experiences, and visually stunning visuals that leave a lasting impression. I love transforming ideas into tangible creations.
                     </h4> </p>
                         <p><h4>Take a behind-the-scenes look into my design work, and I would love the opportunity to collaborate on your next project!</h4></p>
-                        <a class="waves-effect waves-light button"> GET IN TOUCH </a>
+                        <a class="waves-effect waves-light btn"> GET IN TOUCH </a>
                     </div>
             </div>
         </div>
@@ -159,9 +212,9 @@
 </div>
 
     <!-- Java Script -->
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>  
 
 </html>
