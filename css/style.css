@@ -346,7 +346,7 @@ h2.title {
     border-radius: 20px;
   }
   
-  .card-content {
+  h4.card-content {
     color: beige;
   }
 
@@ -356,7 +356,9 @@ h2.title {
     font-weight: 400;
     font-size: 60px;
     line-height: 89px;
-    text-shadow: 4px 6px 6px #C2DFE8;
+    text-shadow: 4px 6px 6px #C8D734;
+    color: beige;
+
     }
   
 
